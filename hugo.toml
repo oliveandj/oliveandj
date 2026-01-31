@@ -1,0 +1,9 @@
+title = "oliveandj"
+theme = "ananke"
+
+# This is used for local dev. The github and gitlab CI override this later
+baseURL = "http://localhost:1313/"
+
+relativeURLs = true
+canonifyURLs = false
+

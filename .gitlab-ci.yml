@@ -1,0 +1,10 @@
+pages:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - apk add --no-cache hugo
+    - hugo --baseURL "https://oliveandj.com/"
+    - mv public public_html
+  artifacts:
+    paths:
+      - public_html
